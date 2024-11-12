@@ -97,9 +97,7 @@ function UseCases() {
               <Button
                 key={index}
                 size="lg"
-                variant={
-                  selectedUseCase?.name === useCase.name ? 'flat' : 'light'
-                }
+                variant="light"
                 color={
                   selectedUseCase?.name === useCase.name
                     ? 'secondary'

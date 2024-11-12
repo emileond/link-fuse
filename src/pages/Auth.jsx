@@ -19,7 +19,7 @@ function AuthPage({ authMode = 'login' }) {
   }, [user, navigate])
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
+    <div className="w-screen h-screen bg-content1 flex justify-center items-center">
       <AuthForm viewMode={authMode} />
     </div>
   )

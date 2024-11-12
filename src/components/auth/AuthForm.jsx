@@ -100,8 +100,11 @@ function AuthForm({ viewMode = 'signup' }) {
   }
   return (
     <div>
-      <RouterLink to="/">
-        <Logo size="10" />
+      <RouterLink
+        to="/"
+        className="w-content flex justify-center items-center mb-9"
+      >
+        <Logo size="7" />
       </RouterLink>
       <form
         onSubmit={handleSubmit(onSubmit)}
