@@ -98,10 +98,12 @@ function UseCases() {
                 key={index}
                 size="lg"
                 variant={
-                  selectedUseCase?.name === useCase.name ? 'faded' : 'light'
+                  selectedUseCase?.name === useCase.name ? 'flat' : 'light'
                 }
                 color={
-                  selectedUseCase?.name === useCase.name ? 'primary' : 'default'
+                  selectedUseCase?.name === useCase.name
+                    ? 'secondary'
+                    : 'default'
                 }
                 startContent={useCase.startContent}
                 endContent={<RiArrowRightLine />}

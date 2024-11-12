@@ -5,6 +5,7 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
+  Chip,
   Divider,
 } from '@nextui-org/react'
 import { RiCheckFill } from 'react-icons/ri'
@@ -30,8 +31,15 @@ function PricingCard({
       className={`basis-[200px] grow ${highlight && 'border-2 border-primary'}`}
     >
       <CardHeader>
-        <div className="flex flex-col gap-1 p-3">
-          <h4 className="font-medium">{name}</h4>
+        <div className="w-full flex flex-col gap-2 p-3">
+          <div className="w-full flex justify-between">
+            <h4 className="font-medium">{name}</h4>
+            {highlight && (
+              <Chip color="primary" variant="flat" size="sm">
+                Most popular
+              </Chip>
+            )}
+          </div>
           <div className="flex items-center gap-3">
             <h3 className="text-3xl font-bold">
               {Intl.NumberFormat('en-US', {
